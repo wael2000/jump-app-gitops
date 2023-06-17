@@ -6,10 +6,10 @@ jump-app-argocd:
 
 jump-app-cicd:
   enabled: true
-  namespaceDev: <user_namespace>
+  namespaceDev: rabo-dev
   namespacePre: mock-value-pre
   namespacePro: mock-value-pro
-  namespaceGitOps: <username>-gitops-argocd
+  namespaceGitOps: openshift-gitops
   functTestRepo: https://github.com/acidonper/jump-app-functional-tests.git
   functTestRepoBranch: master
   functTestMicro: front-javascript
@@ -24,7 +24,7 @@ jump-app-cicd:
 
 # Global variables
 global:
-  appsDomain: <openshift_apps_domain>
+  appsDomain: apps.cluster-p8g4w.p8g4w.sandbox2065.opentlc.com
   # Jump microservices settings
   apps:
     front-javascript:
